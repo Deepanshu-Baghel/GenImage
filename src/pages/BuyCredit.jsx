@@ -1,8 +1,10 @@
 
-const buycredit = () => {
+import React from 'react';
+
+const BuyCredit = () => {
   return (
     <div>buycredit</div>
   )
 }
 
-export default buycredit;
+export default BuyCredit;
