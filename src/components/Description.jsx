@@ -7,8 +7,8 @@ const Description = () => {
         <h1 className='text-3xl sm:text-4xl font-semibold'>Create AI Images</h1>
         <p className='text-gray-500 mb-8'>Turn Your Imagination Into Visiuals </p>
 
-        <div className='flex flex-col gap-5 md:gap-14 md:flex-row items-center'>
-            <img src={assets.sample_img_1} alt="" className='w-100 xl:w-96 rounded-lg' />
+        <div className='flex flex-col gap-5 md:gap-14 md:flex-row items-center '>
+            <img src={assets.sample_img_1} alt="" className='w-100 xl:w-96 rounded-lg hover:scale-105 transition-all duration-500' />
             <div >
                 <h2 className='text-3xl font-medium max-w-lg mb-4 ' >
                     Introducing The AI-Powered Text to Image Generator
