@@ -1,9 +1,13 @@
-
-import React from 'react';
+import React from 'react'
+import Header from '../components/Header.jsx'
+import Steps from '../components/Steps.jsx';
 
 const Home = () => {
   return (
-    <div></div>
+    <div >
+        <Header/>
+        <Steps/>
+          </div>
   )
 }
 
