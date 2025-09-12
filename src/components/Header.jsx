@@ -1,17 +1,31 @@
 
 import React from 'react'
 import { assets } from '../assets/assets'
+import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className='flex flex-col  justify-center items-center text-center my-20 '>
-        <div className='text-stone-500 inline-flex items-center gap-2 bg-white px-6 py-1 rounded-full border border-neutral-500'>
+    <motion.div className='flex flex-col  justify-center items-center text-center my-20 '
+    initial={{ opacity: 0.2, y: 100 }}
+    transition={{ duration: 1 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    >
+
+        <motion.div className='text-stone-500 inline-flex items-center gap-2 bg-white px-6 py-1 rounded-full border border-neutral-500'
+        initial={{ opacity: 0.2, y: -50 }}
+        transition={{ duration: 1, delay: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        >
+
             <p className="inline-flex items-center gap-1">
                Generate Your Imagination Into Reality
                <img src={assets.star_icon} alt="" />
             </p>
-        </div>
-        <h1 className='text-4xl max-w-[300px] sm:text-7xl sm:max-w-[590px] mx-auto mt-10'>Turn Text To <span className='text-blue-600' >AI Images</span> in Seconds</h1>
+        </motion.div>
+
+        <motion.h1 className='text-4xl max-w-[300px] sm:text-7xl sm:max-w-[590px] mx-auto mt-10'>Turn Text To <span className='text-blue-600' >AI Images</span> in Seconds</motion.h1>
         <p className='text-center max-w-xl mx-auto mt-5'>Unleash your creativity with AI. Turn you imagination into visual art in Seconds - just type, and watch the magic happen</p>
         <button className='sm:text-lg text-white bg-black w-auto mt-8 px-12 py-2.5 flex items-center gap-2 rounded-full hover:scale-105 transition-all duration-500' >
             Generate Images
@@ -28,7 +42,7 @@ const Header = () => {
           </div>
 
         <p className='mt-2 text-neutral-600 '>Generated images form the imagify </p>
-    </div>
+    </motion.div>
   )
 }
 

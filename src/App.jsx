@@ -6,6 +6,7 @@ import Result from './pages/result';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './components/Login';
+import NotFound from './components/NotFound';
 import { AppContext } from './context/AppContext';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/' element={ <Home/> } />
         <Route path='/buycredit' element={ <BuyCredit/> } />
         <Route path='/result' element={ <Result/> } />
+        <Route path='*' element={ <NotFound/> } />
       </Routes>
       <Footer/>
 
