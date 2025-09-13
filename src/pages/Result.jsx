@@ -1,7 +1,7 @@
-
-
+import React from 'react';
 import { assets } from '../assets/assets';
 import { useState } from 'react';
+import { motion } from "motion/react"
 
 const Result = () => {
 
@@ -12,11 +12,15 @@ const Result = () => {
 
   const onSubmitHandler = async (e) => {
 
-
   }
 
   return (
-    <form onSubmit={onSubmitHandler}   
+    <motion.form 
+    initial={{ opacity: 0.2, y: 100 }}
+    transition={{ duration: 1 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    onSubmit={onSubmitHandler}   
     className='flex flex-col items-center min-h-[90vh] justify-center  '>
     <div>
       <div className='relative'>
@@ -46,7 +50,7 @@ const Result = () => {
 
     </div> }
 
-  </form>
+  </motion.form>
   )
 }
 
