@@ -1,0 +1,2 @@
+- [x] Edit Header.jsx: Change <p> to <span> and fix typo "Genrate" to "Generate"
+- [x] Adjust Header.jsx: Add flex properties to span and reduce gap to keep text and icon on one line

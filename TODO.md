@@ -1,0 +1,2 @@
+- [ ] Fix syntax error in server/config/mongodb.js (add missing closing brace for connectDB function)
+- [ ] Update server/server.js to import and call connectDB function on server start
